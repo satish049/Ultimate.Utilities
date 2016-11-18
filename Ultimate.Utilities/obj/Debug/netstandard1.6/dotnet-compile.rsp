@@ -9,7 +9,7 @@
 --optimize:False
 --output-name:Ultimate.Utilities
 --title:Ultimate.Utilities
---description:JsonConfig.Core is a popular high-performance JSON framework for .NET
+--description:Ultimate.Utilities provides you the common utility functions that you can use in your everyday coding./n It has StringUtils,CollectionUtils,ObjectUtils and CommonUtils. These classes provide you with a large number of utility functions that can help you code much better.
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0

@@ -1,17 +1,17 @@
 {
   "version": "1.0.0-*",
   "title": "Ultimate.Utilities",
-  "description": "JsonConfig.Core is a popular high-performance JSON framework for .NET",
+  "description": "Ultimate.Utilities provides you the common utility functions that you can use in your everyday coding. It has StringUtils,CollectionUtils,ObjectUtils and CommonUtils. These classes provide you with a large number of utility functions that can help you code much better.",
   "language": "en-US",
   "author": "Satish Kumar B",
   "packOptions": {
-    "projectUrl": "http://www.newtonsoft.com/json",
-    "tags": [ "json" ],
-    "licenseUrl": "https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-    "iconUrl": "http://www.newtonsoft.com/content/images/nugeticon.png",
+    "projectUrl": "https://github.com/satish049/Ultimate.Utilities",
+    "tags": [ "Utilities", "Ultimate Utilities", "Utility Methods" ],
+    "licenseUrl": "https://raw.github.com/satish049/Ultimate.Utilities/master/LICENSE.md",
+    "iconUrl": "https://raw.github.com/satish049/Ultimate.Utilities/master/Content/focus.png",
     "repository": {
       "type": "git",
-      "url": "git://github.com/JamesNK/Newtonsoft.Json"
+      "url": "https://github.com/satish049/Ultimate.Utilities"
     }
   },
   "frameworks": {
