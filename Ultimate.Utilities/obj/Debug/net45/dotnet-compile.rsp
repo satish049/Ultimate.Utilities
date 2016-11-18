@@ -1,0 +1,28 @@
+--temp-output:D:\Projects\Ultimate.Utilities\Ultimate.Utilities\obj\Debug\net45\
+--out:D:\Projects\Ultimate.Utilities\Ultimate.Utilities\bin\Debug\net45\Ultimate.Utilities.dll
+--define:DEBUG
+--define:TRACE
+--define:NET45
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Ultimate.Utilities
+--title:Ultimate.Utilities
+--description:JsonConfig.Core is a popular high-performance JSON framework for .NET
+--file-version:1.0.0.0
+--version:1.0.0.0
+--informational-version:1.0.0
+--neutral-language:en-US
+--target-framework:.NETFramework,Version=v4.5
+--reference:C:\Users\sbonumaddi\.nuget\packages\Newtonsoft.Json\9.0.1\lib\net45\Newtonsoft.Json.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\System.Linq.Queryable.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll
+D:\Projects\Ultimate.Utilities\Ultimate.Utilities\CollectionUtils.cs
+D:\Projects\Ultimate.Utilities\Ultimate.Utilities\CommonUtils.cs
+D:\Projects\Ultimate.Utilities\Ultimate.Utilities\ObjectUtils.cs
+D:\Projects\Ultimate.Utilities\Ultimate.Utilities\StringUtils.cs
+D:\Projects\Ultimate.Utilities\Ultimate.Utilities\Properties\AssemblyInfo.cs
