@@ -22,8 +22,8 @@ var NAVTREEINDEX1 =
 "index.html":[],
 "namespace_ultimate.html":[0,0,0],
 "namespace_ultimate.html":[1,0,0],
-"namespace_ultimate_1_1_utilities.html":[0,0,0,0],
 "namespace_ultimate_1_1_utilities.html":[1,0,0,0],
+"namespace_ultimate_1_1_utilities.html":[0,0,0,0],
 "namespaces.html":[0,0],
 "pages.html":[]
 };
