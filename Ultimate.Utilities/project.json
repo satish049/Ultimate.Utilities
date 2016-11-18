@@ -1,9 +1,9 @@
 {
   "version": "1.0.0-*",
   "title": "Ultimate.Utilities",
-  "description": "Ultimate.Utilities provides you the common utility functions that you can use in your everyday coding. It has StringUtils,CollectionUtils,ObjectUtils and CommonUtils. These classes provide you with a large number of utility functions that can help you code much better.",
+  "description": "Ultimate.Utilities provides you the common utility functions that you can use in your everyday coding. It has StringUtils,CollectionUtils,ObjectUtils and CommonUtils. These classes provide you with a large number of utility functions that can help you code much better. And the best thing is it is available for .Net Core",
   "language": "en-US",
-  "author": "Satish Kumar B",
+  "authors": [ "Satish Kumar B" ],
   "packOptions": {
     "projectUrl": "https://github.com/satish049/Ultimate.Utilities",
     "tags": [ "Utilities", "Ultimate Utilities", "Utility Methods" ],
@@ -12,7 +12,8 @@
     "repository": {
       "type": "git",
       "url": "https://github.com/satish049/Ultimate.Utilities"
-    }
+    },
+    "owners": [ "Satish Kumar B" ]
   },
   "frameworks": {
     "net45": {
