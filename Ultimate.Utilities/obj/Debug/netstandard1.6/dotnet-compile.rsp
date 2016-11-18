@@ -10,6 +10,7 @@
 --output-name:Ultimate.Utilities
 --title:Ultimate.Utilities
 --description:Ultimate.Utilities provides the utility functions for strings, collections, objects. It has StringUtils, CollectionUtils, ObjectUtils and CommonUtils. These classes provide you with a large number of helper functions that can help you code much better. And the best thing is it is available for .Net Core. Please refer to https://satish049.github.io/Ultimate.Utilities/html/annotated.html for documentation
+--copyright:Copyright � Satish Kumar B 2016
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0

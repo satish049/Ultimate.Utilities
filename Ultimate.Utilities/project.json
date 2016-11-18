@@ -4,6 +4,7 @@
   "description": "Ultimate.Utilities provides the utility functions for strings, collections, objects. It has StringUtils, CollectionUtils, ObjectUtils and CommonUtils. These classes provide you with a large number of helper functions that can help you code much better. And the best thing is it is available for .Net Core. Please refer to https://satish049.github.io/Ultimate.Utilities/html/annotated.html for documentation",
   "language": "en-US",
   "authors": [ "Satish Kumar B" ],
+  "copyright": "Copyright © Satish Kumar B 2016",
   "packOptions": {
     "projectUrl": "https://github.com/satish049/Ultimate.Utilities",
     "tags": [ "Utilities", "Ultimate Utilities", "Utility Methods" ],
@@ -13,7 +14,8 @@
       "type": "git",
       "url": "https://github.com/satish049/Ultimate.Utilities"
     },
-    "owners": [ "Satish Kumar B" ]
+    "owners": [ "Satish Kumar B" ],
+    "summary": "Ultimate.Utilities provides a large number of helper functions for .Net and .Net Core Frameworks"
   },
   "frameworks": {
     "net40": {
