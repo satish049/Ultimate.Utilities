@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-*",
   "title": "Ultimate.Utilities",
-  "description": "Ultimate.Utilities provides you the common utility functions that you can use in your everyday coding. It has StringUtils,CollectionUtils,ObjectUtils and CommonUtils. These classes provide you with a large number of utility functions that can help you code much better. And the best thing is it is available for .Net Core",
+  "description": "Ultimate.Utilities provides the utility functions for strings, collections, objects. It has StringUtils, CollectionUtils, ObjectUtils and CommonUtils. These classes provide you with a large number of helper functions that can help you code much better. And the best thing is it is available for .Net Core. Please refer to https://satish049.github.io/Ultimate.Utilities/html/annotated.html for documentation",
   "language": "en-US",
   "authors": [ "Satish Kumar B" ],
   "packOptions": {
@@ -16,19 +16,20 @@
     "owners": [ "Satish Kumar B" ]
   },
   "frameworks": {
-    "net45": {
+    "net40": {
       "dependencies": {
         "Newtonsoft.Json": "9.0.1"
       }
     },
     "netstandard1.6": {
-      "imports": [ "dnxcore50", "net45" ],
+      "imports": [ "dnxcore50", "net40" ],
       "dependencies": {
         "NETStandard.Library": "1.6.0",
         "Newtonsoft.Json": "9.0.1",
         "System.Globalization.Extensions": "4.0.1",
         "System.Linq.Parallel": "4.0.0.0",
-        "System.Reflection.TypeExtensions": "4.1.0"
+        "System.Linq.Queryable": "4.3.0",
+        "System.Reflection.TypeExtensions": "4.3.0"
       }
     }
   },
@@ -36,8 +37,5 @@
     "postcompile": [
       "dotnet pack --no-build --configuration %compile:Configuration%"
     ]
-  },
-  "dependencies": {
-    "System.Linq.Queryable": "4.0.1"
   }
 }

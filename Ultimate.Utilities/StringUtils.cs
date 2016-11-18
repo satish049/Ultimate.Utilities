@@ -4639,7 +4639,7 @@ namespace Ultimate.Utilities
         /// <param name="ignoreCase">is case ignored? (default false)</param>
         /// <param name="suffixes">array of suffixes. Once a suffix is found others will be terminated (default null)</param>
         /// <returns>string with suffix added if it doesn't already has it</returns>
-        public static string AppendIfMissing(string str, string suffix, bool ignoreCase = false, IReadOnlyCollection<string> suffixes = null)
+        public static string AppendIfMissing(string str, string suffix, bool ignoreCase = false, ICollection<string> suffixes = null)
         {
             if (str == null || IsEmpty(suffix) || EndsWith(str, suffix, ignoreCase))
             {
@@ -4711,7 +4711,7 @@ namespace Ultimate.Utilities
         /// <param name="ignoreCase">is case ignored? (default false)</param>
         /// <param name="prefixes">array of prefixes. Once a prefix is found others will be terminated (default null)</param>
         /// <returns>string with prefix added if it doesn't already has it</returns>
-        public static string PrependIfMissing(string str, string prefix, bool ignoreCase = false, IReadOnlyCollection<string> prefixes = null)
+        public static string PrependIfMissing(string str, string prefix, bool ignoreCase = false, ICollection<string> prefixes = null)
         {
             if (str == null || IsEmpty(prefix) || StartsWith(str, prefix, ignoreCase))
             {
@@ -5487,7 +5487,7 @@ namespace Ultimate.Utilities
             return list.ToArray();
         }
 
-        private static string ReplaceEach(string text, IReadOnlyList<string> searchList, IReadOnlyList<string> replacementList, bool repeat, int timeToLive)
+        private static string ReplaceEach(string text, IList<string> searchList, IList<string> replacementList, bool repeat, int timeToLive)
         {
             if (text == null || IsEmpty(text) || searchList == null || searchList.Count == 0 || replacementList == null || replacementList.Count == 0)
             {
