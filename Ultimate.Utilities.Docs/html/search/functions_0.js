@@ -6,6 +6,6 @@ var searchData=
   ['addallatindex_3c_20t_20_3e',['AddAllAtIndex&lt; T &gt;',['../class_ultimate_1_1_utilities_1_1_collection_utils.html#ad05ace632a3f5c63cb1e29e2c9ba239c',1,'Ultimate::Utilities::CollectionUtils']]],
   ['addallignorenull_3c_20t_20_3e',['AddAllIgnoreNull&lt; T &gt;',['../class_ultimate_1_1_utilities_1_1_collection_utils.html#a0eba0e76b7a163e1df31e95dcb667c6e',1,'Ultimate::Utilities::CollectionUtils']]],
   ['addignorenull_3c_20t_20_3e',['AddIgnoreNull&lt; T &gt;',['../class_ultimate_1_1_utilities_1_1_collection_utils.html#ae99786c2d73159dc8fe29ea584d3f0a9',1,'Ultimate::Utilities::CollectionUtils']]],
-  ['appendifmissing',['AppendIfMissing',['../class_ultimate_1_1_utilities_1_1_string_utils.html#aed451312442b458f5fd5a41eec76d2d0',1,'Ultimate::Utilities::StringUtils']]],
+  ['appendifmissing',['AppendIfMissing',['../class_ultimate_1_1_utilities_1_1_string_utils.html#ace59e0ce775e4dff88753793ea30f1b5',1,'Ultimate::Utilities::StringUtils']]],
   ['appendifmissingignorecase',['AppendIfMissingIgnoreCase',['../class_ultimate_1_1_utilities_1_1_string_utils.html#ac348fbb0096f91329675bdada6d76a6b',1,'Ultimate::Utilities::StringUtils']]]
 ];

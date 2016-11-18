@@ -341,11 +341,11 @@ static bool \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a2946f4183a
 \begin{DoxyCompactList}\small\item\em Checks if a string ends with any of an array of specified strings. \end{DoxyCompactList}\item 
 static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a16174740567835f1fa8c78c07287e462}{Normalize\+Space} (string str)
 \begin{DoxyCompactList}\small\item\em Removes leading and trailing whitespaces and replaces sequences of whitespace characters by a single space. \end{DoxyCompactList}\item 
-static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{Append\+If\+Missing} (string str, string suffix, bool ignore\+Case=false, I\+Read\+Only\+Collection$<$ string $>$ suffixes=null)
+static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{Append\+If\+Missing} (string str, string suffix, bool ignore\+Case=false, I\+Collection$<$ string $>$ suffixes=null)
 \begin{DoxyCompactList}\small\item\em Appends the given suffix to the end of the string if the string does not already end with the suffix. \end{DoxyCompactList}\item 
 static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ac348fbb0096f91329675bdada6d76a6b}{Append\+If\+Missing\+Ignore\+Case} (string str, string suffix, string\mbox{[}$\,$\mbox{]} suffixes=null)
 \begin{DoxyCompactList}\small\item\em Appends the given suffix to the end of the string if the string does not already end with the suffix. Ignores the casing while searching for the suffix. \end{DoxyCompactList}\item 
-static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{Prepend\+If\+Missing} (string str, string prefix, bool ignore\+Case=false, I\+Read\+Only\+Collection$<$ string $>$ prefixes=null)
+static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{Prepend\+If\+Missing} (string str, string prefix, bool ignore\+Case=false, I\+Collection$<$ string $>$ prefixes=null)
 \begin{DoxyCompactList}\small\item\em Prepends the given prefix to the start of the string if the string does not already start with the prefix. \end{DoxyCompactList}\item 
 static string \hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ab05cdd9dab72f58f40c8930b4f23d3de}{Prepend\+If\+Missing\+Ignore\+Case} (string str, string prefix, string\mbox{[}$\,$\mbox{]} prefixes=null)
 \begin{DoxyCompactList}\small\item\em Prepends the given prefix to the start of the string if the string does not already start with the prefix. Ignores the casing while searching for the prefix. \end{DoxyCompactList}\item 
@@ -527,45 +527,45 @@ the abbreviated string or original string if the replacement string is null
 \end{DoxyReturn}
 \index{Ultimate\+::\+Utilities\+::\+String\+Utils@{Ultimate\+::\+Utilities\+::\+String\+Utils}!Append\+If\+Missing@{Append\+If\+Missing}}
 \index{Append\+If\+Missing@{Append\+If\+Missing}!Ultimate\+::\+Utilities\+::\+String\+Utils@{Ultimate\+::\+Utilities\+::\+String\+Utils}}
-\subsubsection[{\texorpdfstring{Append\+If\+Missing(string str, string suffix, bool ignore\+Case=false, I\+Read\+Only\+Collection$<$ string $>$ suffixes=null)}{AppendIfMissing(string str, string suffix, bool ignoreCase=false, IReadOnlyCollection< string > suffixes=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static string Ultimate.\+Utilities.\+String\+Utils.\+Append\+If\+Missing (
+\subsubsection[{\texorpdfstring{Append\+If\+Missing(string str, string suffix, bool ignore\+Case=false, I\+Collection$<$ string $>$ suffixes=null)}{AppendIfMissing(string str, string suffix, bool ignoreCase=false, ICollection< string > suffixes=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static string Ultimate.\+Utilities.\+String\+Utils.\+Append\+If\+Missing (
 \begin{DoxyParamCaption}
 \item[{string}]{str, }
 \item[{string}]{suffix, }
 \item[{bool}]{ignore\+Case = {\ttfamily false}, }
-\item[{I\+Read\+Only\+Collection$<$ string $>$}]{suffixes = {\ttfamily null}}
+\item[{I\+Collection$<$ string $>$}]{suffixes = {\ttfamily null}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{}\label{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{}\label{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}
 
 
 Appends the given suffix to the end of the string if the string does not already end with the suffix. 
 
 String\+Utils.\+Append\+If\+Missing(null, null) = null 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, null) = \char`\"{}abc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, null) = \char`\"{}abc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}abcxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}abcxyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abcxyz\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}abcxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abcxyz\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}abcxyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\+X\+Y\+Z\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}abc\+X\+Y\+Zxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\+X\+Y\+Z\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}abc\+X\+Y\+Zxyz\char`\"{} 
 
 String\+Utils.\+Append\+If\+Missing(null, null, true) = null 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, null, true) = \char`\"{}abc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, null, true) = \char`\"{}abc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}, true) = \char`\"{}xyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}, true) = \char`\"{}xyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{null\}) = \char`\"{}abcxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{null\}) = \char`\"{}abcxyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abcxyz\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abcxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abcxyz\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abcxyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abcmno\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abcmno\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abcmno\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abcmno\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\+X\+Y\+Z\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abc\+X\+Y\+Zxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\+X\+Y\+Z\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abc\+X\+Y\+Zxyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_aed451312442b458f5fd5a41eec76d2d0}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\+M\+N\+O\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abc\+M\+N\+Oxyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_ace59e0ce775e4dff88753793ea30f1b5}{String\+Utils.\+Append\+If\+Missing}(\char`\"{}abc\+M\+N\+O\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}abc\+M\+N\+Oxyz\char`\"{} 
 
 
 \begin{DoxyParams}{Parameters}
@@ -4062,49 +4062,49 @@ overlayed String
 \end{DoxyReturn}
 \index{Ultimate\+::\+Utilities\+::\+String\+Utils@{Ultimate\+::\+Utilities\+::\+String\+Utils}!Prepend\+If\+Missing@{Prepend\+If\+Missing}}
 \index{Prepend\+If\+Missing@{Prepend\+If\+Missing}!Ultimate\+::\+Utilities\+::\+String\+Utils@{Ultimate\+::\+Utilities\+::\+String\+Utils}}
-\subsubsection[{\texorpdfstring{Prepend\+If\+Missing(string str, string prefix, bool ignore\+Case=false, I\+Read\+Only\+Collection$<$ string $>$ prefixes=null)}{PrependIfMissing(string str, string prefix, bool ignoreCase=false, IReadOnlyCollection< string > prefixes=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static string Ultimate.\+Utilities.\+String\+Utils.\+Prepend\+If\+Missing (
+\subsubsection[{\texorpdfstring{Prepend\+If\+Missing(string str, string prefix, bool ignore\+Case=false, I\+Collection$<$ string $>$ prefixes=null)}{PrependIfMissing(string str, string prefix, bool ignoreCase=false, ICollection< string > prefixes=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static string Ultimate.\+Utilities.\+String\+Utils.\+Prepend\+If\+Missing (
 \begin{DoxyParamCaption}
 \item[{string}]{str, }
 \item[{string}]{prefix, }
 \item[{bool}]{ignore\+Case = {\ttfamily false}, }
-\item[{I\+Read\+Only\+Collection$<$ string $>$}]{prefixes = {\ttfamily null}}
+\item[{I\+Collection$<$ string $>$}]{prefixes = {\ttfamily null}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{}\label{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{}\label{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}
 
 
 Prepends the given prefix to the start of the string if the string does not already start with the prefix. 
 
 String\+Utils.\+Prepend\+If\+Missing(null, null) = null 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, null) = \char`\"{}abc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, null) = \char`\"{}abc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyzabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyzabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}xyzabc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyzabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}xyzabc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyzabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\+X\+Y\+Zabc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyz\+X\+Y\+Zabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\+X\+Y\+Zabc\char`\"{}, \char`\"{}xyz\char`\"{}) = \char`\"{}xyz\+X\+Y\+Zabc\char`\"{} 
 
 String\+Utils.\+Prepend\+If\+Missing(null, null, true) = null 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, null, false) = \char`\"{}abc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, null, false) = \char`\"{}abc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}, false) = \char`\"{}xyz\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\char`\"{}, \char`\"{}xyz\char`\"{}, false) = \char`\"{}xyz\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{null\}) = \char`\"{}xyzabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{null\}) = \char`\"{}xyzabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}\char`\"{}\}) = \char`\"{}abc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}\char`\"{}\}) = \char`\"{}abc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyzabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}abc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyzabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}xyzabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyzabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}xyzabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyzabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}mnoabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}mnoabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}mnoabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}mnoabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\+X\+Y\+Zabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyz\+X\+Y\+Zabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\+X\+Y\+Zabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyz\+X\+Y\+Zabc\char`\"{} 
 
-\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a0431fe5c4ada5c40fc0be3a64c6c3640}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\+M\+N\+Oabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyz\+M\+N\+Oabc\char`\"{} 
+\hyperlink{class_ultimate_1_1_utilities_1_1_string_utils_a1ed699a1e32e6ab6103afccb02ade8c7}{String\+Utils.\+Prepend\+If\+Missing}(\char`\"{}\+M\+N\+Oabc\char`\"{}, \char`\"{}xyz\char`\"{},false, \{\char`\"{}mno\char`\"{}\}) = \char`\"{}xyz\+M\+N\+Oabc\char`\"{} 
 
 
 \begin{DoxyParams}{Parameters}
