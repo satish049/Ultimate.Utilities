@@ -1,0 +1,133 @@
+\hypertarget{class_ultimate_1_1_utilities_1_1_object_utils}{}\section{Ultimate.\+Utilities.\+Object\+Utils Class Reference}
+\label{class_ultimate_1_1_utilities_1_1_object_utils}\index{Ultimate.\+Utilities.\+Object\+Utils@{Ultimate.\+Utilities.\+Object\+Utils}}
+
+
+Utility methods for Objects  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static T\+Output \hyperlink{class_ultimate_1_1_utilities_1_1_object_utils_a87f38db9e711eeaff2b630358bce4b6b}{If\+Not\+Null$<$ T\+Input, T\+Output $>$} (this T\+Input input, Func$<$ T\+Input, T\+Output $>$ expression)
+\begin{DoxyCompactList}\small\item\em Returns the sub element of an object if the object is not null. \end{DoxyCompactList}\item 
+static T \hyperlink{class_ultimate_1_1_utilities_1_1_object_utils_afacbde77f95ca1a41731b10285156328}{Deep\+Clone$<$ T $>$} (T input)
+\begin{DoxyCompactList}\small\item\em Deep Clones an object and returns a new object \end{DoxyCompactList}\item 
+static void \hyperlink{class_ultimate_1_1_utilities_1_1_object_utils_a35b354436ac2f7ba920ca4397da7424c}{Map\+Objects} (object source, object destination)
+\begin{DoxyCompactList}\small\item\em Maps source object properties to destination object that have identical name and type.\+Mapping is not case sensitive. \end{DoxyCompactList}\item 
+static I\+List$<$ T\+Out $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_object_utils_a834b6fdc4277f9e0c68206c3d38e583c}{Map\+Objects\+List$<$ T\+In, T\+Out $>$} (I\+Enumerable$<$ T\+In $>$ source)
+\begin{DoxyCompactList}\small\item\em Maps all values from the source list to a destination object type and returns a destination object list \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility methods for Objects 
+
+
+
+\subsection{Member Function Documentation}
+\index{Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}!Deep\+Clone$<$ T $>$@{Deep\+Clone$<$ T $>$}}
+\index{Deep\+Clone$<$ T $>$@{Deep\+Clone$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}}
+\subsubsection[{\texorpdfstring{Deep\+Clone$<$ T $>$(\+T input)}{DeepClone< T >(T input)}}]{\setlength{\rightskip}{0pt plus 5cm}static T Ultimate.\+Utilities.\+Object\+Utils.\+Deep\+Clone$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_object_utils_afacbde77f95ca1a41731b10285156328}{}\label{class_ultimate_1_1_utilities_1_1_object_utils_afacbde77f95ca1a41731b10285156328}
+
+
+Deep Clones an object and returns a new object 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of input object\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em input} & input object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new object cloned from the input
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}!If\+Not\+Null$<$ T\+Input, T\+Output $>$@{If\+Not\+Null$<$ T\+Input, T\+Output $>$}}
+\index{If\+Not\+Null$<$ T\+Input, T\+Output $>$@{If\+Not\+Null$<$ T\+Input, T\+Output $>$}!Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}}
+\subsubsection[{\texorpdfstring{If\+Not\+Null$<$ T\+Input, T\+Output $>$(this T\+Input input, Func$<$ T\+Input, T\+Output $>$ expression)}{IfNotNull< TInput, TOutput >(this TInput input, Func< TInput, TOutput > expression)}}]{\setlength{\rightskip}{0pt plus 5cm}static T\+Output Ultimate.\+Utilities.\+Object\+Utils.\+If\+Not\+Null$<$ T\+Input, T\+Output $>$ (
+\begin{DoxyParamCaption}
+\item[{this T\+Input}]{input, }
+\item[{Func$<$ T\+Input, T\+Output $>$}]{expression}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_object_utils_a87f38db9e711eeaff2b630358bce4b6b}{}\label{class_ultimate_1_1_utilities_1_1_object_utils_a87f38db9e711eeaff2b630358bce4b6b}
+
+
+Returns the sub element of an object if the object is not null. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Input} & input object type\\
+\hline
+{\em T\+Output} & ouput object type\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em input} & input object\\
+\hline
+{\em expression} & Lambda expression to return the output\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the input is null then returns the default value of output type else returns the output object
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}!Map\+Objects@{Map\+Objects}}
+\index{Map\+Objects@{Map\+Objects}!Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}}
+\subsubsection[{\texorpdfstring{Map\+Objects(object source, object destination)}{MapObjects(object source, object destination)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Ultimate.\+Utilities.\+Object\+Utils.\+Map\+Objects (
+\begin{DoxyParamCaption}
+\item[{object}]{source, }
+\item[{object}]{destination}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_object_utils_a35b354436ac2f7ba920ca4397da7424c}{}\label{class_ultimate_1_1_utilities_1_1_object_utils_a35b354436ac2f7ba920ca4397da7424c}
+
+
+Maps source object properties to destination object that have identical name and type.\+Mapping is not case sensitive. 
+
+Uses dictionary to cache the properties info which makes the mapping faster.  
+\begin{DoxyParams}{Parameters}
+{\em source} & source object to map from\\
+\hline
+{\em destination} & destination object to map to\\
+\hline
+\end{DoxyParams}
+\index{Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}!Map\+Objects\+List$<$ T\+In, T\+Out $>$@{Map\+Objects\+List$<$ T\+In, T\+Out $>$}}
+\index{Map\+Objects\+List$<$ T\+In, T\+Out $>$@{Map\+Objects\+List$<$ T\+In, T\+Out $>$}!Ultimate\+::\+Utilities\+::\+Object\+Utils@{Ultimate\+::\+Utilities\+::\+Object\+Utils}}
+\subsubsection[{\texorpdfstring{Map\+Objects\+List$<$ T\+In, T\+Out $>$(\+I\+Enumerable$<$ T\+In $>$ source)}{MapObjectsList< TIn, TOut >(IEnumerable< TIn > source)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+List$<$T\+Out$>$ Ultimate.\+Utilities.\+Object\+Utils.\+Map\+Objects\+List$<$ T\+In, T\+Out $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T\+In $>$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_object_utils_a834b6fdc4277f9e0c68206c3d38e583c}{}\label{class_ultimate_1_1_utilities_1_1_object_utils_a834b6fdc4277f9e0c68206c3d38e583c}
+
+
+Maps all values from the source list to a destination object type and returns a destination object list 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+In} & source object type\\
+\hline
+{\em T\+Out} & destination object type\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & source list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+destination object list
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T\+In} : {\em class}]\item[{\em T\+Out} : {\em class}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projects/\+Ultimate.\+Utilities/\+Ultimate.\+Utilities/Object\+Utils.\+cs\end{DoxyCompactItemize}

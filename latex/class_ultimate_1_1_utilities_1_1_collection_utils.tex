@@ -1,0 +1,774 @@
+\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils}{}\section{Ultimate.\+Utilities.\+Collection\+Utils Class Reference}
+\label{class_ultimate_1_1_utilities_1_1_collection_utils}\index{Ultimate.\+Utilities.\+Collection\+Utils@{Ultimate.\+Utilities.\+Collection\+Utils}}
+
+
+Utility methods for collections.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a8f68d92988ad7a3390263ebd75b446d7}{Add\+All$<$ T $>$} (I\+Collection$<$ T $>$ collection, I\+Enumerable$<$ T $>$ elements)
+\begin{DoxyCompactList}\small\item\em Adds all elements in the enumeration to the given collection. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a0eba0e76b7a163e1df31e95dcb667c6e}{Add\+All\+Ignore\+Null$<$ T $>$} (I\+Collection$<$ T $>$ collection, I\+Collection$<$ T $>$ elements)
+\begin{DoxyCompactList}\small\item\em Adds all non null elements in the enumeration to the given collection. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_ad05ace632a3f5c63cb1e29e2c9ba239c}{Add\+All\+At\+Index$<$ T $>$} (I\+List$<$ T $>$ collection, I\+List$<$ T $>$ elements, int index, bool include\+Nulls=true)
+\begin{DoxyCompactList}\small\item\em Adds all elements to the given collection from a specified index \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_ae99786c2d73159dc8fe29ea584d3f0a9}{Add\+Ignore\+Null$<$ T $>$} (I\+Collection$<$ T $>$ collection, T element)
+\begin{DoxyCompactList}\small\item\em Adds an element to the collection unless the element is null. \end{DoxyCompactList}\item 
+static I\+List$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a66612f2d5840415746e336d42de79c7b}{Collate$<$ T $>$} (I\+Enumerable$<$ T $>$ a, I\+Enumerable$<$ T $>$ b, bool include\+Duplicates=true)
+\begin{DoxyCompactList}\small\item\em Combines two lists and sorts them by default \end{DoxyCompactList}\item 
+static I\+List$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_aeefedff209f2d6a8e9e55189f8ffc5e5}{Collate$<$ T $>$} (I\+Enumerable$<$ T $>$ a, I\+Enumerable$<$ T $>$ b, I\+Comparer$<$ T $>$ comparer, bool include\+Duplicates=true)
+\begin{DoxyCompactList}\small\item\em Combines two lists and sorts them using the given comparer \end{DoxyCompactList}\item 
+static I\+Collection$<$ T\+Output $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_ac87637b30288234337232164f4e3e541}{Collect\+From\+Parent$<$ T\+Input, T\+Output $>$} (I\+Enumerable$<$ T\+Input $>$ input\+Collection, I\+Collection$<$ T\+Output $>$ output\+Collection=null)
+\begin{DoxyCompactList}\small\item\em Transforms all elements from input collection to the output collection of the given type. \end{DoxyCompactList}\item 
+static I\+Collection$<$ T\+Output $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a4d72220b7a45eda6ace8b4102606b048}{Collect\+From\+Child$<$ T\+Input, T\+Output $>$} (I\+Enumerable$<$ T\+Input $>$ input\+Collection, I\+Collection$<$ T\+Output $>$ output\+Collection=null)
+\begin{DoxyCompactList}\small\item\em Transforms all elements from input collection to the output collection of the given type. Input collection type must extend output collection type \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a4e9f80473d58ac96f47645fef34bb65b}{Contains\+All$<$ T $>$} (I\+Collection$<$ T $>$ coll1, I\+Collection$<$ T $>$ coll2)
+\begin{DoxyCompactList}\small\item\em Returns true iff all elements of coll2 are also contained in coll1. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a766817b1d4b80bb5826b627e28dcabba}{Contains\+Any$<$ T $>$} (I\+Collection$<$ T $>$ coll1, I\+Collection$<$ T $>$ coll2)
+\begin{DoxyCompactList}\small\item\em Returns true iff at least one element is in both collections. \end{DoxyCompactList}\item 
+static I\+Collection$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_aedefefd2efb016052ab68848610cc3ae}{Disjunction$<$ T $>$} (I\+Collection$<$ T $>$ coll1, I\+Collection$<$ T $>$ coll2)
+\begin{DoxyCompactList}\small\item\em Returns a Collection containing the exclusive disjunction (symmetric difference) of the given collections. \end{DoxyCompactList}\item 
+static I\+Collection$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a897ec78b25bad5bc13013ee73c0b6f25}{Empty\+Collection$<$ T $>$} ()
+\begin{DoxyCompactList}\small\item\em Returns the immutable E\+M\+P\+T\+Y\+\_\+\+C\+O\+L\+L\+E\+C\+T\+I\+ON with generic type safety. \end{DoxyCompactList}\item 
+static I\+Collection$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a012ddee798cd6a0d5dd6cf6dc2085521}{Empty\+If\+Null$<$ T $>$} (I\+Collection$<$ T $>$ collection)
+\begin{DoxyCompactList}\small\item\em Returns an immutable empty collection if the argument is null, or the argument itself otherwise. \end{DoxyCompactList}\item 
+static I\+Collection$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_abd48d9de9b2fb2fff48fe109580a2658}{Default\+If\+Null$<$ T $>$} (I\+Collection$<$ T $>$ collection, I\+Collection$<$ T $>$ default\+Collection)
+\begin{DoxyCompactList}\small\item\em Returns the default collection if the argument is null, or the argument itself otherwise. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a1a1513b7a75c9a8c87327e0b401945e4}{Is\+Empty$<$ T $>$} (I\+Enumerable$<$ T $>$ coll)
+\begin{DoxyCompactList}\small\item\em Null-\/safe check if the specified collection is empty. Null returns true. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a586a0f696aaf35126f7afe4f98e4eb9f}{Is\+Not\+Empty$<$ T $>$} (I\+Enumerable$<$ T $>$ coll)
+\begin{DoxyCompactList}\small\item\em Null-\/safe check if the specified collection is not empty. Null returns false. \end{DoxyCompactList}\item 
+static I\+Dictionary$<$ T, int $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_abaae9061c334c8e023fd3ba3d29a1c42}{Get\+Cardinality\+Map$<$ T $>$} (I\+Enumerable$<$ T $>$ coll)
+\begin{DoxyCompactList}\small\item\em Returns a Map mapping each unique element in the given Collection to an Integer representing the number of occurrences of that element in the Collection. Only those elements present in the collection will appear as keys in the map. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a4c1dd26a8294642e66d3dd80c477d8de}{Is\+Sub\+Collection$<$ T $>$} (I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b)
+\begin{DoxyCompactList}\small\item\em Returns true iff a is a sub-\/collection of b, that is, iff the cardinality of e in a is less than or equal to the cardinality of e in b, for each element e in a. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a76a94e886c718074eac0bc886de13bfc}{Is\+Proper\+Sub\+Collection$<$ T $>$} (I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b)
+\begin{DoxyCompactList}\small\item\em Returns true iff a is a proper sub-\/collection of b, that is, iff the cardinality of e in a is less than or equal to the cardinality of e in b, for each element e in a, and there is at least one element f such that the cardinality of f in b is strictly greater than the cardinality of f in a. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a7a300f6b1609e5d133b8d4e34565c98e}{Is\+Equal\+Collection$<$ T $>$} (I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given Collections contain exactly the same elements with exactly the same cardinalities. i.\+e.,, iff the cardinality of e in a is equal to the cardinality of e in b, for each element e in a or b. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a92d7c0f526b11f97bb568cd7ab437c08}{Is\+Equal\+Collection$<$ T $>$} (I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b, Predicate$<$ T $>$ predicate)
+\begin{DoxyCompactList}\small\item\em Returns true iff the given Collections contain exactly the same elements with exactly the same cardinalities. i.\+e.,, iff the cardinality of e in a is equal to the cardinality of e in b, for each element e in a or b. \end{DoxyCompactList}\item 
+static I\+List$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_ae060f1e88ce265d024e4eec09c698807}{Clone$<$ T $>$} (I\+List$<$ T $>$ collection)
+\begin{DoxyCompactList}\small\item\em Creates and returns a new collection by cloning the existing collection \end{DoxyCompactList}\item 
+static I\+Collection$<$ T $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_ae8ab917d8baea49f45181b12e22a8b3b}{Remove\+All$<$ T $>$} (I\+List$<$ T $>$ collection, I\+List$<$ T $>$ remove)
+\begin{DoxyCompactList}\small\item\em Removes the elements in remove from collection. That is, this method returns a collection containing all the elements in c that are not in remove This method is useful if you do not wish to modify the collection itself and thus cannot call collection.\+Remove\+All();. \end{DoxyCompactList}\item 
+static I\+Collection$<$ string $>$ \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_aaabf1088fb1274c503be4e4c6780ca0d}{Find\+With\+Reg\+Ex} (I\+Enumerable$<$ string $>$ collection, string reg\+Ex, Regex\+Options options=Regex\+Options.\+None)
+\begin{DoxyCompactList}\small\item\em Finds and returns the elements matching the given regular expression \end{DoxyCompactList}\item 
+static int \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a25da02c051c7abf093ead6cc88c49247}{Get\+Length} (this I\+Enumerable$<$ object $>$ collection)
+\begin{DoxyCompactList}\small\item\em Gets the length of a collection. Null Safe \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static string\mbox{[}$\,$\mbox{]} \hyperlink{class_ultimate_1_1_utilities_1_1_collection_utils_a6470b0d730f029a73fb05e080821915c}{Empty\+String\+Array}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Empty String Array \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility methods for collections. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Add\+All$<$ T $>$@{Add\+All$<$ T $>$}}
+\index{Add\+All$<$ T $>$@{Add\+All$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Add\+All$<$ T $>$(\+I\+Collection$<$ T $>$ collection, I\+Enumerable$<$ T $>$ elements)}{AddAll< T >(ICollection< T > collection, IEnumerable< T > elements)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Add\+All$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{collection, }
+\item[{I\+Enumerable$<$ T $>$}]{elements}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a8f68d92988ad7a3390263ebd75b446d7}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a8f68d92988ad7a3390263ebd75b446d7}
+
+
+Adds all elements in the enumeration to the given collection. 
+
+Collection\+Utils.\+Add\+All(\{ \char`\"{}\+Satish\char`\"{}, \char`\"{}\+Kumar\char`\"{} \}, \{ \char`\"{}\+Roronoa\char`\"{}, \char`\"{}\+Zoro\char`\"{} \})= \{ \char`\"{}\+Satish\char`\"{}, \char`\"{}\+Kumar\char`\"{}, \char`\"{}\+Roronoa\char`\"{}, \char`\"{}\+Zoro\char`\"{} \} 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & The collection to add to, must not be null\\
+\hline
+{\em elements} & The enumeration of elements to add, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Add\+All\+At\+Index$<$ T $>$@{Add\+All\+At\+Index$<$ T $>$}}
+\index{Add\+All\+At\+Index$<$ T $>$@{Add\+All\+At\+Index$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Add\+All\+At\+Index$<$ T $>$(\+I\+List$<$ T $>$ collection, I\+List$<$ T $>$ elements, int index, bool include\+Nulls=true)}{AddAllAtIndex< T >(IList< T > collection, IList< T > elements, int index, bool includeNulls=true)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Add\+All\+At\+Index$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+List$<$ T $>$}]{collection, }
+\item[{I\+List$<$ T $>$}]{elements, }
+\item[{int}]{index, }
+\item[{bool}]{include\+Nulls = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_ad05ace632a3f5c63cb1e29e2c9ba239c}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_ad05ace632a3f5c63cb1e29e2c9ba239c}
+
+
+Adds all elements to the given collection from a specified index 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & The collection to add to, must not be null\\
+\hline
+{\em elements} & The list of elements to be added\\
+\hline
+{\em index} & index from where the elements has to be inserted\\
+\hline
+{\em include\+Nulls} & flag to add the null values also (default true)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Add\+All\+Ignore\+Null$<$ T $>$@{Add\+All\+Ignore\+Null$<$ T $>$}}
+\index{Add\+All\+Ignore\+Null$<$ T $>$@{Add\+All\+Ignore\+Null$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Add\+All\+Ignore\+Null$<$ T $>$(\+I\+Collection$<$ T $>$ collection, I\+Collection$<$ T $>$ elements)}{AddAllIgnoreNull< T >(ICollection< T > collection, ICollection< T > elements)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Add\+All\+Ignore\+Null$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{collection, }
+\item[{I\+Collection$<$ T $>$}]{elements}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a0eba0e76b7a163e1df31e95dcb667c6e}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a0eba0e76b7a163e1df31e95dcb667c6e}
+
+
+Adds all non null elements in the enumeration to the given collection. 
+
+Collection\+Utils.\+Add\+All\+Ignore\+Null(\{ \char`\"{}\+Satish\char`\"{}, \char`\"{}\+Kumar\char`\"{} \}, \{ \char`\"{}\+Roronoa\char`\"{}, \char`\"{}\+Zoro\char`\"{},null \})= \{ \char`\"{}\+Satish\char`\"{}, \char`\"{}\+Kumar\char`\"{}, \char`\"{}\+Roronoa\char`\"{}, \char`\"{}\+Zoro\char`\"{} \} 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & The collection to add to, must not be null\\
+\hline
+{\em elements} & The enumeration of elements to add, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Add\+Ignore\+Null$<$ T $>$@{Add\+Ignore\+Null$<$ T $>$}}
+\index{Add\+Ignore\+Null$<$ T $>$@{Add\+Ignore\+Null$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Add\+Ignore\+Null$<$ T $>$(\+I\+Collection$<$ T $>$ collection, T element)}{AddIgnoreNull< T >(ICollection< T > collection, T element)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Add\+Ignore\+Null$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{collection, }
+\item[{T}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_ae99786c2d73159dc8fe29ea584d3f0a9}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_ae99786c2d73159dc8fe29ea584d3f0a9}
+
+
+Adds an element to the collection unless the element is null. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of object the Collection contains\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & the collection to add to, must not be null\\
+\hline
+{\em element} & the object to add, if null it will not be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Clone$<$ T $>$@{Clone$<$ T $>$}}
+\index{Clone$<$ T $>$@{Clone$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Clone$<$ T $>$(\+I\+List$<$ T $>$ collection)}{Clone< T >(IList< T > collection)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+List$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Clone$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+List$<$ T $>$}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_ae060f1e88ce265d024e4eec09c698807}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_ae060f1e88ce265d024e4eec09c698807}
+
+
+Creates and returns a new collection by cloning the existing collection 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & collection to clone\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cloned copy of collection
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Collate$<$ T $>$@{Collate$<$ T $>$}}
+\index{Collate$<$ T $>$@{Collate$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Collate$<$ T $>$(\+I\+Enumerable$<$ T $>$ a, I\+Enumerable$<$ T $>$ b, bool include\+Duplicates=true)}{Collate< T >(IEnumerable< T > a, IEnumerable< T > b, bool includeDuplicates=true)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+List$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Collate$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T $>$}]{a, }
+\item[{I\+Enumerable$<$ T $>$}]{b, }
+\item[{bool}]{include\+Duplicates = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a66612f2d5840415746e336d42de79c7b}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a66612f2d5840415746e336d42de79c7b}
+
+
+Combines two lists and sorts them by default 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a -\/ the first collection, must not be null\\
+\hline
+{\em b} & b -\/ the second collection, must not be null\\
+\hline
+{\em include\+Duplicates} & must be false if the duplicates should be removed (default true)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Reference\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Collate$<$ T $>$@{Collate$<$ T $>$}}
+\index{Collate$<$ T $>$@{Collate$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Collate$<$ T $>$(\+I\+Enumerable$<$ T $>$ a, I\+Enumerable$<$ T $>$ b, I\+Comparer$<$ T $>$ comparer, bool include\+Duplicates=true)}{Collate< T >(IEnumerable< T > a, IEnumerable< T > b, IComparer< T > comparer, bool includeDuplicates=true)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+List$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Collate$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T $>$}]{a, }
+\item[{I\+Enumerable$<$ T $>$}]{b, }
+\item[{I\+Comparer$<$ T $>$}]{comparer, }
+\item[{bool}]{include\+Duplicates = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_aeefedff209f2d6a8e9e55189f8ffc5e5}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_aeefedff209f2d6a8e9e55189f8ffc5e5}
+
+
+Combines two lists and sorts them using the given comparer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a -\/ the first collection, must not be null\\
+\hline
+{\em b} & b -\/ the second collection, must not be null\\
+\hline
+{\em comparer} & comparer that must be used to sort the result\\
+\hline
+{\em include\+Duplicates} & must be false if the duplicates should be removed (default true)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Reference\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Collect\+From\+Child$<$ T\+Input, T\+Output $>$@{Collect\+From\+Child$<$ T\+Input, T\+Output $>$}}
+\index{Collect\+From\+Child$<$ T\+Input, T\+Output $>$@{Collect\+From\+Child$<$ T\+Input, T\+Output $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Collect\+From\+Child$<$ T\+Input, T\+Output $>$(\+I\+Enumerable$<$ T\+Input $>$ input\+Collection, I\+Collection$<$ T\+Output $>$ output\+Collection=null)}{CollectFromChild< TInput, TOutput >(IEnumerable< TInput > inputCollection, ICollection< TOutput > outputCollection=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T\+Output$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Collect\+From\+Child$<$ T\+Input, T\+Output $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T\+Input $>$}]{input\+Collection, }
+\item[{I\+Collection$<$ T\+Output $>$}]{output\+Collection = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a4d72220b7a45eda6ace8b4102606b048}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a4d72220b7a45eda6ace8b4102606b048}
+
+
+Transforms all elements from input collection to the output collection of the given type. Input collection type must extend output collection type 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Input} & input type\\
+\hline
+{\em T\+Output} & output type\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Collection} & The Input Collection to be converted\\
+\hline
+{\em output\+Collection} & The Output Collection \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T\+Input} : {\em T\+Output}]\end{description}
+\end{Desc}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Collect\+From\+Parent$<$ T\+Input, T\+Output $>$@{Collect\+From\+Parent$<$ T\+Input, T\+Output $>$}}
+\index{Collect\+From\+Parent$<$ T\+Input, T\+Output $>$@{Collect\+From\+Parent$<$ T\+Input, T\+Output $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Collect\+From\+Parent$<$ T\+Input, T\+Output $>$(\+I\+Enumerable$<$ T\+Input $>$ input\+Collection, I\+Collection$<$ T\+Output $>$ output\+Collection=null)}{CollectFromParent< TInput, TOutput >(IEnumerable< TInput > inputCollection, ICollection< TOutput > outputCollection=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T\+Output$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Collect\+From\+Parent$<$ T\+Input, T\+Output $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T\+Input $>$}]{input\+Collection, }
+\item[{I\+Collection$<$ T\+Output $>$}]{output\+Collection = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_ac87637b30288234337232164f4e3e541}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_ac87637b30288234337232164f4e3e541}
+
+
+Transforms all elements from input collection to the output collection of the given type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Input} & input type\\
+\hline
+{\em T\+Output} & output type\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Collection} & The Collection to be converted\\
+\hline
+{\em output\+Collection} & The output collection which is optional\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+output collection of given type
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T\+Output} : {\em T\+Input}]\end{description}
+\end{Desc}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Contains\+All$<$ T $>$@{Contains\+All$<$ T $>$}}
+\index{Contains\+All$<$ T $>$@{Contains\+All$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Contains\+All$<$ T $>$(\+I\+Collection$<$ T $>$ coll1, I\+Collection$<$ T $>$ coll2)}{ContainsAll< T >(ICollection< T > coll1, ICollection< T > coll2)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Contains\+All$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{coll1, }
+\item[{I\+Collection$<$ T $>$}]{coll2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a4e9f80473d58ac96f47645fef34bb65b}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a4e9f80473d58ac96f47645fef34bb65b}
+
+
+Returns true iff all elements of coll2 are also contained in coll1. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em coll1} & coll1 -\/ the first collection, must not be null\\
+\hline
+{\em coll2} & coll2 -\/ the second collection, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff the intersection of the collections has the same cardinality as the set of unique elements from the second collection
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Contains\+Any$<$ T $>$@{Contains\+Any$<$ T $>$}}
+\index{Contains\+Any$<$ T $>$@{Contains\+Any$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Contains\+Any$<$ T $>$(\+I\+Collection$<$ T $>$ coll1, I\+Collection$<$ T $>$ coll2)}{ContainsAny< T >(ICollection< T > coll1, ICollection< T > coll2)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Contains\+Any$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{coll1, }
+\item[{I\+Collection$<$ T $>$}]{coll2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a766817b1d4b80bb5826b627e28dcabba}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a766817b1d4b80bb5826b627e28dcabba}
+
+
+Returns true iff at least one element is in both collections. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em coll1} & coll1 -\/ the first collection, must not be null\\
+\hline
+{\em coll2} & coll2 -\/ the second collection, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff the intersection of the collections is non-\/empty
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Default\+If\+Null$<$ T $>$@{Default\+If\+Null$<$ T $>$}}
+\index{Default\+If\+Null$<$ T $>$@{Default\+If\+Null$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Default\+If\+Null$<$ T $>$(\+I\+Collection$<$ T $>$ collection, I\+Collection$<$ T $>$ default\+Collection)}{DefaultIfNull< T >(ICollection< T > collection, ICollection< T > defaultCollection)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Default\+If\+Null$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{collection, }
+\item[{I\+Collection$<$ T $>$}]{default\+Collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_abd48d9de9b2fb2fff48fe109580a2658}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_abd48d9de9b2fb2fff48fe109580a2658}
+
+
+Returns the default collection if the argument is null, or the argument itself otherwise. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & collection -\/ the collection, possibly null\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em default\+Collection} & defaukt collection to be returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+given default collection if the argument is null
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Disjunction$<$ T $>$@{Disjunction$<$ T $>$}}
+\index{Disjunction$<$ T $>$@{Disjunction$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Disjunction$<$ T $>$(\+I\+Collection$<$ T $>$ coll1, I\+Collection$<$ T $>$ coll2)}{Disjunction< T >(ICollection< T > coll1, ICollection< T > coll2)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Disjunction$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{coll1, }
+\item[{I\+Collection$<$ T $>$}]{coll2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_aedefefd2efb016052ab68848610cc3ae}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_aedefefd2efb016052ab68848610cc3ae}
+
+
+Returns a Collection containing the exclusive disjunction (symmetric difference) of the given collections. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em coll1} & coll1 -\/ the first collection, must not be null\\
+\hline
+{\em coll2} & coll2 -\/ the second collection, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the symmetric difference of the two collections
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Empty\+Collection$<$ T $>$@{Empty\+Collection$<$ T $>$}}
+\index{Empty\+Collection$<$ T $>$@{Empty\+Collection$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Empty\+Collection$<$ T $>$()}{EmptyCollection< T >()}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Empty\+Collection$<$ T $>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a897ec78b25bad5bc13013ee73c0b6f25}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a897ec78b25bad5bc13013ee73c0b6f25}
+
+
+Returns the immutable E\+M\+P\+T\+Y\+\_\+\+C\+O\+L\+L\+E\+C\+T\+I\+ON with generic type safety. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & T -\/ the element type\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+immutable empty collection
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Empty\+If\+Null$<$ T $>$@{Empty\+If\+Null$<$ T $>$}}
+\index{Empty\+If\+Null$<$ T $>$@{Empty\+If\+Null$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Empty\+If\+Null$<$ T $>$(\+I\+Collection$<$ T $>$ collection)}{EmptyIfNull< T >(ICollection< T > collection)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Empty\+If\+Null$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a012ddee798cd6a0d5dd6cf6dc2085521}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a012ddee798cd6a0d5dd6cf6dc2085521}
+
+
+Returns an immutable empty collection if the argument is null, or the argument itself otherwise. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & T -\/ the element type\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & collection -\/ the collection, possibly null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an empty collection if the argument is null
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Find\+With\+Reg\+Ex@{Find\+With\+Reg\+Ex}}
+\index{Find\+With\+Reg\+Ex@{Find\+With\+Reg\+Ex}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Find\+With\+Reg\+Ex(\+I\+Enumerable$<$ string $>$ collection, string reg\+Ex, Regex\+Options options=\+Regex\+Options.\+None)}{FindWithRegEx(IEnumerable< string > collection, string regEx, RegexOptions options=RegexOptions.None)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$string$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Find\+With\+Reg\+Ex (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ string $>$}]{collection, }
+\item[{string}]{reg\+Ex, }
+\item[{Regex\+Options}]{options = {\ttfamily RegexOptions.None}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_aaabf1088fb1274c503be4e4c6780ca0d}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_aaabf1088fb1274c503be4e4c6780ca0d}
+
+
+Finds and returns the elements matching the given regular expression 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & the input collection,must not be null\\
+\hline
+{\em reg\+Ex} & the regular expression\\
+\hline
+{\em options} & options for the regular expression, defualt no options applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the collection of elements matching the regular expression
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Get\+Cardinality\+Map$<$ T $>$@{Get\+Cardinality\+Map$<$ T $>$}}
+\index{Get\+Cardinality\+Map$<$ T $>$@{Get\+Cardinality\+Map$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Get\+Cardinality\+Map$<$ T $>$(\+I\+Enumerable$<$ T $>$ coll)}{GetCardinalityMap< T >(IEnumerable< T > coll)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Dictionary$<$T, int$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Get\+Cardinality\+Map$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T $>$}]{coll}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_abaae9061c334c8e023fd3ba3d29a1c42}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_abaae9061c334c8e023fd3ba3d29a1c42}
+
+
+Returns a Map mapping each unique element in the given Collection to an Integer representing the number of occurrences of that element in the Collection. Only those elements present in the collection will appear as keys in the map. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & T -\/ the type of object in the returned Map. This is a super type of .\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em coll} & coll -\/ the collection to get the cardinality map for, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the populated cardinality map
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Get\+Length@{Get\+Length}}
+\index{Get\+Length@{Get\+Length}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Get\+Length(this I\+Enumerable$<$ object $>$ collection)}{GetLength(this IEnumerable< object > collection)}}]{\setlength{\rightskip}{0pt plus 5cm}static int Ultimate.\+Utilities.\+Collection\+Utils.\+Get\+Length (
+\begin{DoxyParamCaption}
+\item[{this I\+Enumerable$<$ object $>$}]{collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a25da02c051c7abf093ead6cc88c49247}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a25da02c051c7abf093ead6cc88c49247}
+
+
+Gets the length of a collection. Null Safe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & input collection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collection length or -\/1 if null
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Is\+Empty$<$ T $>$@{Is\+Empty$<$ T $>$}}
+\index{Is\+Empty$<$ T $>$@{Is\+Empty$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Is\+Empty$<$ T $>$(\+I\+Enumerable$<$ T $>$ coll)}{IsEmpty< T >(IEnumerable< T > coll)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Is\+Empty$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T $>$}]{coll}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a1a1513b7a75c9a8c87327e0b401945e4}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a1a1513b7a75c9a8c87327e0b401945e4}
+
+
+Null-\/safe check if the specified collection is empty. Null returns true. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em coll} & coll -\/ the collection to check, may be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if empty or null
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Is\+Equal\+Collection$<$ T $>$@{Is\+Equal\+Collection$<$ T $>$}}
+\index{Is\+Equal\+Collection$<$ T $>$@{Is\+Equal\+Collection$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Is\+Equal\+Collection$<$ T $>$(\+I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b)}{IsEqualCollection< T >(ICollection< T > a, ICollection< T > b)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Is\+Equal\+Collection$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{a, }
+\item[{I\+Collection$<$ T $>$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a7a300f6b1609e5d133b8d4e34565c98e}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a7a300f6b1609e5d133b8d4e34565c98e}
+
+
+Returns true iff the given Collections contain exactly the same elements with exactly the same cardinalities. i.\+e.,, iff the cardinality of e in a is equal to the cardinality of e in b, for each element e in a or b. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a -\/ the first collection, must not be null\\
+\hline
+{\em b} & b -\/ the second collection, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff the collections contain the same elements with the same cardinalities.
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Is\+Equal\+Collection$<$ T $>$@{Is\+Equal\+Collection$<$ T $>$}}
+\index{Is\+Equal\+Collection$<$ T $>$@{Is\+Equal\+Collection$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Is\+Equal\+Collection$<$ T $>$(\+I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b, Predicate$<$ T $>$ predicate)}{IsEqualCollection< T >(ICollection< T > a, ICollection< T > b, Predicate< T > predicate)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Is\+Equal\+Collection$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{a, }
+\item[{I\+Collection$<$ T $>$}]{b, }
+\item[{Predicate$<$ T $>$}]{predicate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a92d7c0f526b11f97bb568cd7ab437c08}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a92d7c0f526b11f97bb568cd7ab437c08}
+
+
+Returns true iff the given Collections contain exactly the same elements with exactly the same cardinalities. i.\+e.,, iff the cardinality of e in a is equal to the cardinality of e in b, for each element e in a or b. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a -\/ the first collection, must not be null\\
+\hline
+{\em b} & b -\/ the second collection, must not be null\\
+\hline
+{\em predicate} & the predicate passed to calculate the equality.\+The predicate method must be applied on the collection \textquotesingle{}b\textquotesingle{} and should be expecting collection \char`\"{}a\char`\"{} element as parameter.(ex\+: (x)=$>$b.\+Any(i=$>$i.\+equals(x))) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff the collections contain the same elements matching the given predicate 
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Is\+Not\+Empty$<$ T $>$@{Is\+Not\+Empty$<$ T $>$}}
+\index{Is\+Not\+Empty$<$ T $>$@{Is\+Not\+Empty$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Is\+Not\+Empty$<$ T $>$(\+I\+Enumerable$<$ T $>$ coll)}{IsNotEmpty< T >(IEnumerable< T > coll)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Is\+Not\+Empty$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Enumerable$<$ T $>$}]{coll}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a586a0f696aaf35126f7afe4f98e4eb9f}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a586a0f696aaf35126f7afe4f98e4eb9f}
+
+
+Null-\/safe check if the specified collection is not empty. Null returns false. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em coll} & coll -\/ the collection to check, may be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if non-\/null and non-\/empty
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Is\+Proper\+Sub\+Collection$<$ T $>$@{Is\+Proper\+Sub\+Collection$<$ T $>$}}
+\index{Is\+Proper\+Sub\+Collection$<$ T $>$@{Is\+Proper\+Sub\+Collection$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Is\+Proper\+Sub\+Collection$<$ T $>$(\+I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b)}{IsProperSubCollection< T >(ICollection< T > a, ICollection< T > b)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Is\+Proper\+Sub\+Collection$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{a, }
+\item[{I\+Collection$<$ T $>$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a76a94e886c718074eac0bc886de13bfc}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a76a94e886c718074eac0bc886de13bfc}
+
+
+Returns true iff a is a proper sub-\/collection of b, that is, iff the cardinality of e in a is less than or equal to the cardinality of e in b, for each element e in a, and there is at least one element f such that the cardinality of f in b is strictly greater than the cardinality of f in a. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a -\/ the first (sub?) collection, must not be null\\
+\hline
+{\em b} & b -\/ the second (super?) collection, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff a is a proper sub-\/collection of b
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Is\+Sub\+Collection$<$ T $>$@{Is\+Sub\+Collection$<$ T $>$}}
+\index{Is\+Sub\+Collection$<$ T $>$@{Is\+Sub\+Collection$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Is\+Sub\+Collection$<$ T $>$(\+I\+Collection$<$ T $>$ a, I\+Collection$<$ T $>$ b)}{IsSubCollection< T >(ICollection< T > a, ICollection< T > b)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool Ultimate.\+Utilities.\+Collection\+Utils.\+Is\+Sub\+Collection$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+Collection$<$ T $>$}]{a, }
+\item[{I\+Collection$<$ T $>$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a4c1dd26a8294642e66d3dd80c477d8de}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a4c1dd26a8294642e66d3dd80c477d8de}
+
+
+Returns true iff a is a sub-\/collection of b, that is, iff the cardinality of e in a is less than or equal to the cardinality of e in b, for each element e in a. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a -\/ the first (sub?) collection, must not be null\\
+\hline
+{\em b} & b -\/ the second (super?) collection, must not be null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff a is a sub-\/collection of b
+\end{DoxyReturn}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Remove\+All$<$ T $>$@{Remove\+All$<$ T $>$}}
+\index{Remove\+All$<$ T $>$@{Remove\+All$<$ T $>$}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Remove\+All$<$ T $>$(\+I\+List$<$ T $>$ collection, I\+List$<$ T $>$ remove)}{RemoveAll< T >(IList< T > collection, IList< T > remove)}}]{\setlength{\rightskip}{0pt plus 5cm}static I\+Collection$<$T$>$ Ultimate.\+Utilities.\+Collection\+Utils.\+Remove\+All$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{I\+List$<$ T $>$}]{collection, }
+\item[{I\+List$<$ T $>$}]{remove}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_ae8ab917d8baea49f45181b12e22a8b3b}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_ae8ab917d8baea49f45181b12e22a8b3b}
+
+
+Removes the elements in remove from collection. That is, this method returns a collection containing all the elements in c that are not in remove This method is useful if you do not wish to modify the collection itself and thus cannot call collection.\+Remove\+All();. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em collection} & collection -\/ the collection from which items are removed (in the returned collection)\\
+\hline
+{\em remove} & remove -\/ the items to be removed from the returned collection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Collection containing all the elements of collection except any elements that also occur in remove.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\index{Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}!Empty\+String\+Array@{Empty\+String\+Array}}
+\index{Empty\+String\+Array@{Empty\+String\+Array}!Ultimate\+::\+Utilities\+::\+Collection\+Utils@{Ultimate\+::\+Utilities\+::\+Collection\+Utils}}
+\subsubsection[{\texorpdfstring{Empty\+String\+Array}{EmptyStringArray}}]{\setlength{\rightskip}{0pt plus 5cm}string \mbox{[}$\,$\mbox{]} Ultimate.\+Utilities.\+Collection\+Utils.\+Empty\+String\+Array\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}\hypertarget{class_ultimate_1_1_utilities_1_1_collection_utils_a6470b0d730f029a73fb05e080821915c}{}\label{class_ultimate_1_1_utilities_1_1_collection_utils_a6470b0d730f029a73fb05e080821915c}
+
+
+Empty String Array 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projects/\+Ultimate.\+Utilities/\+Ultimate.\+Utilities/Collection\+Utils.\+cs\end{DoxyCompactItemize}
